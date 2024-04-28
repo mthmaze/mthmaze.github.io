@@ -149,17 +149,18 @@ body {font-family: "Lato", sans-serif}
         <form action="/action_page.php" target="_blank">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+
             </div>
           </div>
+
+          <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          <br>
           <input class="w3-input w3-border" type="number" placeholder="Phone Number" required name="Phone">
           <br>
           <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
           <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-          We do NOT accept any form of spam messages.
+          We do <b>NOT</b> accept any form of spam messages.
+          <br> <br><b>NOTE:</b> If the filled in boxes are invalid, then the submission will fail.
         </form>
       </div>
     </div>
@@ -192,7 +193,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  setTimeout(carousel, 3100);    
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
